@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index.js",
+    "docker:build": "docker build -t gmunguia/demo-uneat:latest -t gmunguia/demo-uneat:1.0.0 .",
+    "docker:publish": "docker push gmunguia/demo-uneat:1.0.0 && docker push gmunguia/demo-uneat:latest"
   },
   "keywords": [],
   "author": "",

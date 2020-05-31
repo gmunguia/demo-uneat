@@ -15,4 +15,4 @@ server.post("/echo", (req, res) => {
 
 server.use("/life", lifeRoutes);
 
-server.listen(3000);
+server.listen(process.env.PORT || 8080);
