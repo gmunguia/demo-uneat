@@ -1,9 +1,12 @@
 const express = require("express");
 const bodyParser = require("body-parser");
+const cors = require("cors");
 const lifeRoutes = require("./routes/life.js");
 
 const server = express();
 server.use(bodyParser.json());
+
+server.use(cors());
 
 server.get("/hello", (req, res) => {
   res.send("Hello World");
